@@ -28,7 +28,8 @@ app.get('/api/health', (req, res) => {
 // Catch-all handler: For any request that doesn't match an API route
 // or static file, send back the React index.html.
 // This supports client-side routing (React Router).
-app.get('*', (req, res) => {
+// Note: using regex /.*/ or /:splat*/ avoids Express 5 wildcard issues
+app.get(/.*/, (req, res) => {
     res.sendFile(path.join(__dirname, '../dist', 'index.html'));
 });
 
