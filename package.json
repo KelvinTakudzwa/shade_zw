@@ -1,0 +1,11 @@
+{
+    "name": "shade-zw-root",
+    "private": true,
+    "engines": {
+        "node": ">=20.0.0"
+    },
+    "scripts": {
+        "build": "cd web_app && npm install && npm run build",
+        "start": "cd web_app && npm start"
+    }
+}
