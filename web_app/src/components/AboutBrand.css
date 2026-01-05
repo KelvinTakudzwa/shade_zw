@@ -1,0 +1,85 @@
+.about-section {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--bg-primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xl);
+  align-items: center;
+}
+
+.about-title {
+  font-size: 3.5rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--text-primary);
+}
+
+.about-text {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  margin-bottom: var(--spacing-sm);
+  max-width: 500px;
+}
+
+.about-stats {
+  display: flex;
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-md);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-family: var(--font-heading);
+  color: var(--accent-gold);
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--text-secondary);
+}
+
+.about-visual {
+  position: relative;
+  height: 500px;
+}
+
+.visual-box {
+  position: absolute;
+  border: 1px solid var(--accent-gold);
+}
+
+.box-1 {
+  width: 100%; /* Made wider for better impact */
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url('../assets/about_visual_sunglasses_1767651980599.png');
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  border: none; /* Remove border for cleaner look with image */
+  box-shadow: 20px 20px 0 var(--accent-gold); /* Stylistic offset shadow */
+}
+
+.box-2 {
+  display: none;
+}
+
+@media (max-width: 968px) {
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-visual {
+    display: none; /* Hide illustrative boxes on mobile for simplicity */
+  }
+}

@@ -1,0 +1,5 @@
+/* App-wide styles can go here if not in index.css */
+main {
+  width: 100%;
+  min-height: 100vh;
+}

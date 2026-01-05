@@ -1,0 +1,120 @@
+.products-section {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--bg-secondary);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.section-title {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-xs);
+  color: var(--text-primary);
+}
+
+.section-subtitle {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.product-card {
+  background: var(--bg-card);
+  border-radius: 4px; /* Slight rounded corners */
+  overflow: hidden;
+  transition: transform var(--transition-fast);
+  position: relative;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-image-wrapper {
+  position: relative;
+  aspect-ratio: 1; /* Square aspect ratio */
+  background: #2a2a2a; /* Slightly lighter than card bg */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.product-image {
+  max-width: 80%;
+  transition: transform var(--transition-smooth);
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5));
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.1) rotate(-2deg);
+}
+
+.product-tag {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: var(--accent-gold);
+  color: var(--bg-primary);
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 10;
+}
+
+.add-to-cart-btn {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  color: var(--text-primary);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.75rem 1.25rem;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all var(--transition-fast);
+}
+
+.add-to-cart-btn:hover {
+  background: var(--accent-gold);
+  color: var(--bg-primary);
+  border-color: var(--accent-gold);
+}
+
+.product-card:hover .add-to-cart-btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.product-info {
+  padding: var(--spacing-sm) var(--spacing-sm) var(--spacing-md);
+  text-align: center;
+}
+
+.product-name {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+  color: var(--text-primary);
+}
+
+.product-price {
+  color: var(--accent-gold);
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
