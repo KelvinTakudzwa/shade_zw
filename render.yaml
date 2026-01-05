@@ -1,6 +1,7 @@
 services:
   - type: web
     name: shade-zw-app
+    rootDir: web_app
     env: node
     buildCommand: npm install && npm run build
     startCommand: npm start
