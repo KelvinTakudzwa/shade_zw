@@ -44,6 +44,12 @@
   color: var(--accent-gold);
 }
 
+.footer-address {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
 .footer-bottom {
   text-align: center;
   padding-top: var(--spacing-md);

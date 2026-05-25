@@ -25,6 +25,12 @@ const Footer = () => {
                         <h4>Social</h4>
                         <a href="https://instagram.com/shade_zw_" target="_blank" rel="noopener noreferrer">Instagram</a>
                     </div>
+                    <div className="footer-col">
+                        <h4>Find Us</h4>
+                        <p className="footer-address">55 Avenues Mall</p>
+                        <p className="footer-address">Cnr L.Takawira &amp; Fife Ave</p>
+                        <p className="footer-address">Harare, Zimbabwe</p>
+                    </div>
                 </div>
             </div>
             <div className="footer-bottom">
