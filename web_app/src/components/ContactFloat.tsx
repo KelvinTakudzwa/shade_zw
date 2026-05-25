@@ -4,7 +4,7 @@ import './ContactFloat.css';
 
 const ContactFloat = () => {
     const { items, totalItems } = useCart();
-    const phoneNumber = '263719228900'; // Assuming Zimbabwe code + number provided in prompt
+    const phoneNumber = '263779426608'; // Assuming Zimbabwe code + number provided in prompt
 
     const handleCheckout = () => {
         if (items.length === 0) return;
